@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1D232A;
+  color: #fefefe;
+  font-family: 'Poppins', sans-serif;
+  min-width: 380px;
+}
+
+.header-container {
+  background: #15191C;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-container h1 {
+  padding: 20px;
+  font-weight: 300;
+}
+
+.header-container i {
+  font-size: 30px;
+}
+
+.container {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock-container {
+  background: #26282b;
+  width: 50%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 10px 15px 7px rgba(0, 0, 0, 0.16);
+  font-size: 50px;
+  flex-direction: column;
+}
+
+.clock-hours {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock-hours span {
+  background: #006ce6;
+  width: 120px;
+  padding: 20px 30px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.clock-info {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 900px) {
+  .clock-container {
+    width: 100%;
+    font-size: 50px;
+  }
+
+  .clock-hours span {
+    width: 100px;
+    text-align: center;
+    padding: 0;
+  }
+}
